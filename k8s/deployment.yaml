@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: monmouth
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: monmouth
   template:
     metadata:
       labels:
-        app: ray
+        app: monmouth
     spec:
       containers:
-      - image: okteto.dev/ray:latest
-        name: ray
+      - image: okteto.dev/monmouth:latest
+        name: monmouth
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "91086275-acbc-47df-a95a-249b1fc12a4e"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/v856l555"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "91086275-acbc-47df-a95a-249b1fc12a4e"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vm663466"
         - name: Share_Path
           value: "/v2link"
